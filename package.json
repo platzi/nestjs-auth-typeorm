@@ -23,7 +23,7 @@
     "migrations:generate": "npm run typeorm -- migration:generate -n",
     "migrations:run": "npm run typeorm -- migration:run",
     "migrations:show": "npm run typeorm -- migration:show",
-    "migrations:drop": "npm run typeorm -- migration:drop"
+    "migrations:drop": "npm run typeorm -- schema:drop"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.13",
