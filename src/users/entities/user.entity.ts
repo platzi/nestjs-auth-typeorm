@@ -8,6 +8,8 @@ import {
   JoinColumn,
 } from 'typeorm';
 
+import { Exclude } from 'class-transformer';
+
 import { Customer } from './customer.entity';
 
 @Entity()
@@ -18,8 +20,9 @@ export class User {
   @Column({ type: 'varchar', length: 255 })
   email: string;
 
+  @Exclude()
   @Column({ type: 'varchar', length: 255 })
-  password: string; // encript
+  password: string;
 
   @Column({ type: 'varchar', length: 100 })
   role: string;
