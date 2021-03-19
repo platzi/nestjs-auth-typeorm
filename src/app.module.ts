@@ -22,6 +22,7 @@ import config from './config';
         JWT_SECRET: Joi.string().required(),
         DATABASE_NAME: Joi.string().required(),
         DATABASE_PORT: Joi.number().required(),
+        DATABASE_URL: Joi.string().required(),
       }),
     }),
     HttpModule,
