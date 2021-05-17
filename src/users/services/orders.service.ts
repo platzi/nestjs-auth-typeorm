@@ -17,7 +17,7 @@ export class OrdersService {
     return this.orderRepo.find();
   }
 
-  ordersByUser(customerId: number) {
+  ordersByCustomer(customerId: number) {
     return this.orderRepo.find({
       where: {
         customer: customerId,
