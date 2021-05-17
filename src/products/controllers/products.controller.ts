@@ -10,7 +10,7 @@ import {
   HttpStatus,
   HttpCode,
   Res,
-  UseGuards
+  UseGuards,
   // ParseIntPipe,
 } from '@nestjs/common';
 import { Response } from 'express';
